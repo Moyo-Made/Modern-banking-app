@@ -1,25 +1,25 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-	theme: {
-		screens: {
-			sm: "640px",
-			// => @media (min-width: 640px) { ... }
-
-			md: "768px",
-			// => @media (min-width: 768px) { ... }
-
-			lg: "1024px",
-			// => @media (min-width: 1024px) { ... }
-
-			xl: "1280px",
-			// => @media (min-width: 1280px) { ... }
+export const content = ["./index.html", "./src/**/*.{js,jsx}"];
+export const mode = "jit";
+export const theme = {
+	extend: {
+		colors: {
+			primary: "#00040f",
+			secondary: "#00f6ff",
+			dimWhite: "rgba(255, 255, 255, 0.7)",
+			dimBlue: "rgba(9, 151, 124, 0.1)",
 		},
-		extend: {
-			fontFamily: {
-				body: ["Inter"],
-			},
+		fontFamily: {
+			poppins: ["Poppins", "sans-serif"],
 		},
 	},
-	plugins: [],
+	screens: {
+		xs: "480px",
+		ss: "620px",
+		sm: "768px",
+		md: "1060px",
+		lg: "1200px",
+		xl: "1700px",
+	},
 };
+export const plugins = [];
