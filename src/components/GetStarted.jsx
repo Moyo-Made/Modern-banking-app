@@ -7,7 +7,7 @@ const GetStarted = () => {
 	return (
 		<div
 			className={`${styles.flexCenter} w-[120px] h-[120px] rounded-full bg-blue-gradient
-      p-[0.18rem] cursor-pointer`}
+      		p-[0.18rem] cursor-pointer transition duration-300 hover:scale-90`}
 		>
 			<div
 				className={`${styles.flexCenter} flex-col bg-primary w-full h-full rounded-full`}
