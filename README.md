@@ -1,3 +1,3 @@
 
 # Modern-banking-app
-A modern banking using React and TailwindCSS
+A modern banking using React and Tailwind
